@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1795 761" width="1795" height="761">
+  <!-- Estilos visuales de alta visibilidad -->
+  <style>
+    .pin-point { fill: #D00000; stroke: #FFFFFF; stroke-width: 2.5; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.6)); }
+    .pin-halo { fill: #FF0000; fill-opacity: 0.35; }
+    .sierra-region { fill: #D00000; fill-opacity: 0.22; stroke: #900000; stroke-width: 2; stroke-dasharray: 6,4; }
+    .label-box { fill: #FFFFFF; stroke: #D00000; stroke-width: 1.5; rx: 4; ry: 4; filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.3)); }
+    .label-text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #111111; }
+    .mountain-box { fill: #800000; stroke: #FFFFFF; stroke-width: 1.5; rx: 4; ry: 4; filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.4)); }
+    .mountain-text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #FFFFFF; }
+  </style>
+
+  <g id="capa-ubicaciones">
+
+    <!-- 1. LA HABANA (447, 110) -->
+    <g id="La_Habana">
+      <circle cx="447" cy="110" r="15" class="pin-halo" />
+      <circle cx="447" cy="110" r="7" class="pin-point" />
+      <rect x="387" y="65" width="120" height="26" class="label-box" />
+      <text x="447" y="83" text-anchor="middle" class="label-text">La Habana</text>
+    </g>
+
+    <!-- 2. SANTA CLARA (824, 230) -->
+    <g id="Santa_Clara">
+      <circle cx="824" cy="230" r="15" class="pin-halo" />
+      <circle cx="824" cy="230" r="7" class="pin-point" />
+      <rect x="764" y="185" width="120" height="26" class="label-box" />
+      <text x="824" y="203" text-anchor="middle" class="label-text">Santa Clara</text>
+    </g>
+
+    <!-- 3. PLAYA GIRÓN (657, 287) -->
+    <g id="Playa_Giron">
+      <circle cx="657" cy="287" r="15" class="pin-halo" />
+      <circle cx="657" cy="287" r="7" class="pin-point" />
+      <rect x="597" y="307" width="120" height="26" class="label-box" />
+      <text x="657" y="325" text-anchor="middle" class="label-text">Playa Girón</text>
+    </g>
+
+    <!-- 4. SIERRA MAESTRA (Cordillera del Suroriente + Pico Turquino) -->
+    <g id="Sierra_Maestra">
+      <!-- Polígono de cobertura geográfica de la cordillera -->
+      <path d="M 1260,635 Q 1317,622 1380,625 Q 1455,628 1470,642 Q 1390,658 1317,652 Q 1270,650 1260,635 Z" class="sierra-region" />
+      <!-- Punto cumbre: Pico Turquino (1317, 630) -->
+      <circle cx="1317" cy="630" r="5" class="pin-point" />
+      <rect x="1242" y="665" width="150" height="26" class="mountain-box" />
+      <text x="1317" y="683" text-anchor="middle" class="mountain-text">SIERRA MAESTRA</text>
+    </g>
+
+    <!-- 5. SANTIAGO DE CUBA (1476, 625) -->
+    <g id="Santiago_de_Cuba">
+      <circle cx="1476" cy="625" r="15" class="pin-halo" />
+      <circle cx="1476" cy="625" r="7" class="pin-point" />
+      <rect x="1401" y="580" width="150" height="26" class="label-box" />
+      <text x="1476" y="598" text-anchor="middle" class="label-text">Santiago de Cuba</text>
+    </g>
+
+  </g>
+</svg>
